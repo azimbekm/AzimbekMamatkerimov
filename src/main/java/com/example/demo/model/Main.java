@@ -10,32 +10,22 @@ public class Main {
     private Long id;
     private String brand;
     private String model;
-    private String description;
-    private int year;
+    private int size;
     private double price;
 
     public Main() {
     }
 
-    public Main(String brand, String model, String description, int year, double price) {
+    public Main(String brand, String model, int size, double price) {
         this.id = id;
-        this.price = price;
         this.brand = brand;
         this.model = model;
-        this.description = description;
-        this.year = year;
+        this.size = size;
+        this.price = price;
     }
 
     public Long getId() {
         return id;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public String getBrand() {
@@ -46,12 +36,12 @@ public class Main {
         return model;
     }
 
-    public String getDescription() {
-        return description;
+    public int getSize() {
+        return size;
     }
 
-    public int getYear() {
-        return year;
+    public double getPrice() {
+        return price;
     }
 
     public void setId(Long id) {
@@ -66,12 +56,10 @@ public class Main {
         this.model = model;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setSize(int size) { this.size = size; }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
 }

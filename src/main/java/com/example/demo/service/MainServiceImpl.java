@@ -41,8 +41,7 @@ public class MainServiceImpl implements MainService {
                 .map(main -> {
                     main.setBrand(c.getBrand());
                     main.setModel(c.getModel());
-                    main.setDescription(c.getDescription());
-                    main.setYear(c.getYear());
+                    main.setSize(c.getSize());
                     main.setPrice(c.getPrice());
                     return mainRepository.save(main);
                 })
